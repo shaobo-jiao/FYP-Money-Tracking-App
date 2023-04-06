@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_keyboard_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_category_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_round"
+            android:backgroundTint="@color/blue"
+            android:padding="5dp"
+            android:src="@drawable/ic_random"
+            app:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@id/tv_amount"
+            android:layout_toEndOf="@id/iv_category_icon"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_edit"
+            android:drawableTint="@color/grey_text"
+            android:hint="Memo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textColor="@color/grey_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="0"
+            android:padding="5dp"
+            android:textColor="@color/grey_text"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/gl_keys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_app_bg"
+        android:columnCount="4"
+        android:padding="1dp"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/btn_7"
+            style="@style/keyboard_key_stying"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn_8"
+            style="@style/keyboard_key_stying"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            style="@style/keyboard_key_stying"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_date"
+            style="@style/keyboard_key_stying"
+            android:text="@string/keyboard_init_date"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_4"
+            style="@style/keyboard_key_stying"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn_5"
+            style="@style/keyboard_key_stying"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn_6"
+            style="@style/keyboard_key_stying"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/keyboard_key_stying"
+            android:text="CE" />
+
+        <Button
+            android:id="@+id/btn_1"
+            style="@style/keyboard_key_stying"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_2"
+            style="@style/keyboard_key_stying"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn_3"
+            style="@style/keyboard_key_stying"
+            android:text="3" />
+
+        <ImageButton
+            android:id="@+id/ib_confirm"
+            style="@style/keyboard_key_stying"
+            android:layout_height="102dp"
+            android:layout_rowSpan="2"
+            android:src="@drawable/ic_confirm" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            style="@style/keyboard_key_stying"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn_0"
+            style="@style/keyboard_key_stying"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/ib_backspace"
+            style="@style/keyboard_key_stying"
+            android:src="@drawable/ic_backspace" />
+
+    </GridLayout>
+
+
+</LinearLayout>

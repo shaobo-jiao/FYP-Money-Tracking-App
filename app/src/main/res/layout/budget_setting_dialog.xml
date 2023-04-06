@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_budget_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/budget_dialog_title"
+        android:textColor="@color/grey_text"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close" />
+
+    <EditText
+        android:id="@+id/et_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_budget_dialog_title"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_rect_rounded"
+        android:hint="@string/budget_dialog_hint"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:maxLength="10">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_budget"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_rect_button"
+        android:textColor="@color/white"
+        android:text="Confirm" />
+
+
+</RelativeLayout>

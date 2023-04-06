@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Final Year Project"
+include ':app'
+include ':playground'
+include ':playviewpager2'
+include ':customkeyboard'
+include ':changeableicon'
+include ':monthpicker'
+include ':docsscan'
+include ':docsscan2'
+include ':docsscan3'
+include ':imageio'
+include ':chart'
+include ':pickfile'

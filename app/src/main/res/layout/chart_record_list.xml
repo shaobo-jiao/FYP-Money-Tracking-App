@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/cardStyling"
+    app:contentPaddingLeft="0dp"
+    app:contentPaddingRight="0dp"
+    app:contentPaddingTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_list_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/grey_card_bar"
+            android:paddingHorizontal="10dp"
+            android:text="@string/expense_list" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

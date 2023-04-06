@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--layout for all records in one day: contains a header and list of records -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/cardStyling"
+    app:contentPaddingLeft="0dp"
+    app:contentPaddingRight="0dp"
+    app:contentPaddingTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/grey_card_bar"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="2023-01-01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/tv_total_expense"
+                android:gravity="center"
+                android:text="Exp:" />
+
+            <TextView
+                android:id="@+id/tv_total_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@id/tv_total_income_label"
+                android:gravity="center"
+                android:text="1999.99" />
+
+            <TextView
+                android:id="@+id/tv_total_income_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/tv_total_income"
+                android:gravity="center"
+                android:text="Inc:" />
+
+            <TextView
+                android:id="@+id/tv_total_income"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="1999.99" />
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_daily_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

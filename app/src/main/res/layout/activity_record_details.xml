@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/details"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView style="@style/cardStyling">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- category row -->
+            <TextView
+                android:id="@+id/tv_category_label"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                android:text="@string/category"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_category_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_category_label"
+                android:layout_toEndOf="@id/tv_category_label"
+                android:background="@drawable/shape_round"
+                android:padding="5dp"
+                android:src="@drawable/ic_random" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_category_icon"
+                android:layout_toEndOf="@id/iv_category_icon"
+                android:padding="5dp"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <!-- Record Type -->
+            <TextView
+                android:id="@+id/tv_type_label"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category_label"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                android:text="@string/record_type"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_type_label"
+                android:layout_toEndOf="@id/tv_type_label"
+                android:padding="5dp"
+                android:text="Type"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <!-- Amount -->
+            <TextView
+                android:id="@+id/tv_amount_label"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_type_label"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                android:text="@string/amount"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_amount_label"
+                android:layout_toEndOf="@id/tv_amount_label"
+                android:padding="5dp"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <!-- Date -->
+            <TextView
+                android:id="@+id/tv_date_label"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_amount_label"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                android:text="@string/date"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_date_label"
+                android:layout_toEndOf="@id/tv_date_label"
+                android:padding="5dp"
+                android:text="YYYY-MM-DD"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <!-- Memo -->
+            <TextView
+                android:id="@+id/tv_memo_label"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_date_label"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                android:text="@string/memo"
+                android:textColor="@color/grey_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_memo_label"
+                android:layout_toEndOf="@id/tv_memo_label"
+                android:padding="5dp"
+                android:text="Memo"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/shape_rect_button"
+        android:text="@string/edit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

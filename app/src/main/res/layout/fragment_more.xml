@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_clear_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/clear"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/horizontal_divider" />
+
+        <TextView
+            android:id="@+id/tv_export_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/export_records"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/horizontal_divider" />
+        <TextView
+            android:id="@+id/tv_import_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Import Records"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/horizontal_divider" />
+        <TextView
+            android:id="@+id/tv_about_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/about"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

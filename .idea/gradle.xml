@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/changeableicon" />
+            <option value="$PROJECT_DIR$/chart" />
+            <option value="$PROJECT_DIR$/customkeyboard" />
+            <option value="$PROJECT_DIR$/docsscan" />
+            <option value="$PROJECT_DIR$/docsscan2" />
+            <option value="$PROJECT_DIR$/docsscan3" />
+            <option value="$PROJECT_DIR$/imageio" />
+            <option value="$PROJECT_DIR$/monthpicker" />
+            <option value="$PROJECT_DIR$/pickfile" />
+            <option value="$PROJECT_DIR$/playground" />
+            <option value="$PROJECT_DIR$/playviewpager2" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

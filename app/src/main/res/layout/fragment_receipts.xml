@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_app_bg"
+    tools:context=".fragments.RecordsFragment">
+
+    <!--  App bar containing title and month picker  -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/receipts"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/year_month_placeholder"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableEndCompat="@drawable/ic_arrow_down" />
+    </RelativeLayout>
+
+    <!--  RecycleView displaying the list of receipts  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_monthly_receipts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="100dp" />
+
+    <!--  Img btn at bottom right for launching receipt scanning  -->
+    <ImageButton
+        android:id="@+id/ib_scan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_round"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/ic_scan"
+        app:tint="@color/white" />
+
+</RelativeLayout>
