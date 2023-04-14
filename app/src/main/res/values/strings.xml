@@ -8,7 +8,7 @@
     <string name="keyboard_init_date">Today</string>
     <string name="cancel">CANCEL</string>
     <string name="ok">OK</string>
-    <string name="budget_dialog_title">Set A Monthly Record</string>
+    <string name="budget_dialog_title">Set A Monthly Budget</string>
     <string name="budget_dialog_hint">Enter the amount</string>
     <string name="receipts">Receipts</string>
     <string name="details">Details</string>
