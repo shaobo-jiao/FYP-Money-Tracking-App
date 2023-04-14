@@ -65,7 +65,7 @@ public class RecordDetailsActivity extends AppCompatActivity {
             // show alert dialog to confirm deletion
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Confirmation")
-                    .setMessage("Are you sure to delete this receipt?")
+                    .setMessage("Are you sure to delete this record?")
                     .setNegativeButton("CANCEL", null)
                     .setPositiveButton("CONFIRM", (dialog, which) -> {
                         recordDao.deleteRecord(record);
